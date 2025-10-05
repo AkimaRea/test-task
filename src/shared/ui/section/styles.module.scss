@@ -1,0 +1,8 @@
+.section {
+  display: flex;
+  flex-direction: column;
+
+  &.withPadding {
+    padding: var(--spacer-x1_5) var(--spacer-x2);
+  }
+}

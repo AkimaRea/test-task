@@ -1,0 +1,15 @@
+.settings {
+  all: unset;
+  border-radius: 0 var(--radius-m);
+  height: 35px;
+  width: 35px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #265352;
+  box-shadow: 0 2px 10px black;
+
+  &:focus {
+    box-shadow: 0 0 0 2px black;
+  }
+}

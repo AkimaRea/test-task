@@ -1,0 +1,87 @@
+.games_card {
+  &_content {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap: 8px;
+
+    transition: 0.1s ease-in-out;
+  }
+
+  &.controlled[data-active="false"] {
+    .games_card_content {
+      opacity: 0.2;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.1s ease-in-out;
+  }
+
+  &_image {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+
+    &_wrapper {
+      background-color: var(--color-brand-green-alt);
+      border-radius: var(--radius-m);
+      height: 120px;
+
+      aspect-ratio: 4 / 3;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    &_placeholder {
+      width: 140px;
+      opacity: 0.2;
+    }
+  }
+
+  &_provider {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    &_logo {
+      width: 20px;
+      height: 20px;
+      border-radius: 20px;
+      background-color: var(--color-text-white-secondary);
+    }
+
+    span {
+      font-family: "Roboto Flex";
+      font-weight: 400;
+      font-size: 12px;
+    }
+  }
+
+  &_name {
+    font-family: "Roboto Flex";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
+
+.controlled {
+  position: relative;
+
+  .games_card_settings {
+    position: absolute;
+    right: 0;
+    z-index:1;
+  }
+}

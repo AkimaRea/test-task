@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: var(--spacer-x1);
+  padding: var(--spacer-x1_5) var(--spacer-x2);
+
+  &_title {
+    font-family: "Roboto Flex";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0%;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

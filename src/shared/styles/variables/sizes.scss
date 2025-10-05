@@ -1,0 +1,20 @@
+:root {
+  /* spacers */
+  --spacer-half: 4px;
+  --spacer-x1: 8px;
+  --spacer-x1_5: 12px;
+  --spacer-x2: 16px;
+  --spacer-x3: 24px;
+  --spacer-x5: 40px;
+  --spacer-x8: 64px;
+  --spacer-x13: 104px;
+
+  /* radiuses */
+  --radius-xs: 4px;
+  --radius-s: 6px;
+  --radius-m: var(--spacer-x1);
+  --radius-l: var(--spacer-x1_5);
+  --radius-xl: var(--spacer-x2);
+  --radius-xxl: var(--spacer-x3);
+  --radius-xxxl: var(--spacer-x5);
+}

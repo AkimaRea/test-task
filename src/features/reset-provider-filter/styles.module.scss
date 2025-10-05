@@ -1,0 +1,16 @@
+.reset_filter_button {
+  height: 36px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  background-color: var(--danger-color);
+  border-radius: 20px;
+  padding: 10px;
+
+  * {
+    color: var(--color-text-white);
+  }
+}

@@ -1,0 +1,226 @@
+[
+  {
+    "id": 1,
+    "title": "Starburst",
+    "provider": "NetEnt",
+    "image": "https://picsum.photos/id/10/800/600",
+    "isActive": true
+  },
+  {
+    "id": 2,
+    "title": "Gonzo's Quest",
+    "provider": "NetEnt",
+    "image": "invalid-url",
+    "isActive": true
+  },
+  {
+    "id": 3,
+    "title": "",
+    "provider": "Pragmatic Play",
+    "image": "https://picsum.photos/id/20/800/600",
+    "isActive": false
+  },
+  {
+    "id": 4,
+    "title": "Book of Dead",
+    "provider": "Play'n GO",
+    "image": "https://picsum.photos/id/30/800/600",
+    "isActive": true
+  },
+  {
+    "id": 5,
+    "title": "Mega Moolah",
+    "provider": null,
+    "image": "https://picsum.photos/id/40/800/600",
+    "isActive": true
+  },
+  {
+    "id": 6,
+    "title": "Live Roulette",
+    "provider": "Evolution Gaming",
+    "image": "https://nonexistent-domain.com/roulette.jpg",
+    "isActive": "yes"
+  },
+  {
+    "id": 7,
+    "title": "Immortal Romance",
+    "provider": "Microgaming",
+    "image": "https://picsum.photos/id/50/800/600",
+    "isActive": true
+  },
+  {
+    "id": 8,
+    "title": "Dead or Alive 2",
+    "provider": "NetEnt",
+    "image": "broken-link",
+    "isActive": true
+  },
+  {
+    "id": 9,
+    "title": "Sweet Bonanza",
+    "provider": "Pragmatic Play",
+    "image": "https://picsum.photos/id/60/800/600",
+    "isActive": false
+  },
+  {
+    "id": 10,
+    "title": "Reactoonz",
+    "provider": "Play'n GO",
+    "image": null,
+    "isActive": true
+  },
+  {
+    "id": 11,
+    "title": "Monopoly Live",
+    "provider": "Evolution Gaming",
+    "image": "https://picsum.photos/id/70/800/600",
+    "isActive": true
+  },
+  {
+    "id": 12,
+    "title": "Thunderstruck II",
+    "provider": "Microgaming",
+    "image": "https://picsum.photos/id/80/800/600",
+    "isActive": false
+  },
+  {
+    "id": 13,
+    "title": "Big Bass Bonanza",
+    "provider": "Pragmatic Play",
+    "image": "",
+    "isActive": true
+  },
+  {
+    "id": 14,
+    "title": "Rise of Olympus",
+    "provider": "Play'n GO",
+    "image": "https://picsum.photos/id/90/800/600",
+    "isActive": true
+  },
+  {
+    "id": 15,
+    "title": "Dream Catcher",
+    "provider": "Evolution Gaming",
+    "image": "https://fake-domain.xyz/dream-catcher.jpg",
+    "isActive": false
+  },
+  {
+    "id": 16,
+    "title": "Avalon II",
+    "provider": "Microgaming",
+    "image": "https://picsum.photos/id/100/800/600",
+    "isActive": true
+  },
+  {
+    "id": 17,
+    "title": "The Dog House",
+    "provider": "Pragmatic Play",
+    "image": "https://picsum.photos/id/110/800/600",
+    "isActive": true
+  },
+  {
+    "id": 18,
+    "title": "Moon Princess",
+    "provider": "Play'n GO",
+    "image": null,
+    "isActive": false
+  },
+  {
+    "id": 19,
+    "title": "Crazy Time",
+    "provider": "Evolution Gaming",
+    "image": "https://picsum.photos/id/120/800/600",
+    "isActive": true
+  },
+  {
+    "id": 20,
+    "title": "Jurassic Park",
+    "provider": "Microgaming",
+    "image": "invalid-path.jpg",
+    "isActive": true
+  },
+  {
+    "id": 21,
+    "title": "Gates of Olympus",
+    "provider": "Pragmatic Play",
+    "image": "https://picsum.photos/id/130/800/600",
+    "isActive": false
+  },
+  {
+    "id": 22,
+    "title": "Fire Joker",
+    "provider": "Play'n GO",
+    "image": "https://picsum.photos/id/140/800/600",
+    "isActive": true
+  },
+  {
+    "id": 23,
+    "title": "Lightning Roulette",
+    "provider": "Evolution Gaming",
+    "image": "",
+    "isActive": true
+  },
+  {
+    "id": 24,
+    "title": "Game of Thrones",
+    "provider": "Microgaming",
+    "image": "https://picsum.photos/id/150/800/600",
+    "isActive": false
+  },
+  {
+    "id": 25,
+    "title": "Buffalo Blitz",
+    "provider": "Playtech",
+    "image": "https://nonexistent.com/buffalo-blitz.jpg",
+    "isActive": true
+  },
+  {
+    "id": 26,
+    "title": "Vikings Go Berzerk",
+    "provider": "Yggdrasil",
+    "image": "https://picsum.photos/id/160/800/600",
+    "isActive": true
+  },
+  {
+    "id": 27,
+    "title": "Jammin' Jars",
+    "provider": "Push Gaming",
+    "image": null,
+    "isActive": false
+  },
+  {
+    "id": 28,
+    "title": "Razor Shark",
+    "provider": "Push Gaming",
+    "image": "https://picsum.photos/id/170/800/600",
+    "isActive": true
+  },
+  {
+    "id": 29,
+    "title": "Age of the Gods",
+    "provider": "Playtech",
+    "image": "broken.jpg",
+    "isActive": "true"
+  },
+  {
+    "id": 30,
+    "title": "Valley of the Gods",
+    "provider": "Yggdrasil",
+    "image": "https://picsum.photos/id/180/800/600",
+    "isActive": false
+  },
+  {
+    "id": 31,
+    "title": "Fat Rabbit",
+    "provider": "Push Gaming",
+    "image": "",
+    "isActive": true
+  },
+  {
+    "id": 32,
+    "title": "Gladiator",
+    "provider": "Playtech",
+    "image": "https://picsum.photos/id/190/800/600",
+    "isActive": true
+  }
+]
