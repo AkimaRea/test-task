@@ -1,5 +1,6 @@
-import { Popover as PopoverPrimitive } from "radix-ui";
-import s from "./styles.module.scss";
+import { Popover as PopoverPrimitive } from 'radix-ui';
+
+import s from './styles.module.scss';
 
 export interface PopoverProps {
   trigger: React.ReactNode;
@@ -12,10 +13,7 @@ export const Popover = ({ trigger, children }: PopoverProps) => (
       <button>{trigger}</button>
     </PopoverPrimitive.Trigger>
     <PopoverPrimitive.Portal>
-      <PopoverPrimitive.Content
-        className={s.Content}
-        sideOffset={5}
-      >
+      <PopoverPrimitive.Content className={s.Content} sideOffset={5}>
         {children}
         <PopoverPrimitive.Arrow className={s.Arrow} />
       </PopoverPrimitive.Content>

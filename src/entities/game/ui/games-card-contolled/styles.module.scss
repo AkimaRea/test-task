@@ -8,7 +8,7 @@
     transition: 0.1s ease-in-out;
   }
 
-  &.controlled[data-active="false"] {
+  &.controlled[data-active='false'] {
     .games_card_content {
       opacity: 0.2;
     }
@@ -62,14 +62,14 @@
     }
 
     span {
-      font-family: "Roboto Flex";
+      font-family: 'Roboto Flex';
       font-weight: 400;
       font-size: 12px;
     }
   }
 
   &_name {
-    font-family: "Roboto Flex";
+    font-family: 'Roboto Flex';
     font-weight: 500;
     font-size: 16px;
     line-height: 140%;
@@ -82,6 +82,6 @@
   .games_card_settings {
     position: absolute;
     right: 0;
-    z-index:1;
+    z-index: 1;
   }
 }

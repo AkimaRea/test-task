@@ -1,5 +1,6 @@
-import s from "./styles.module.scss";
-import cx from "classnames";
+import cx from 'classnames';
+
+import s from './styles.module.scss';
 
 interface SectionProps {
   children?: React.ReactNode;
@@ -7,14 +8,6 @@ interface SectionProps {
   className?: string;
 }
 
-export const Section = ({
-  children,
-  withPadding = true,
-  className,
-}: SectionProps) => {
-  return (
-    <section className={cx(s.section, withPadding && s.withPadding, className)}>
-      {children}
-    </section>
-  );
+export const Section = ({ children, withPadding = true, className }: SectionProps) => {
+  return <section className={cx(s.section, withPadding && s.withPadding, className)}>{children}</section>;
 };

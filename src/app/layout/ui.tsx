@@ -1,8 +1,11 @@
-import { Outlet } from "react-router";
-import s from "./styles.module.scss";
-import { Header } from "shared/ui/";
-import { selectProviderFilterOption } from "entities/game";
-import { useSelector } from "react-redux";
+import { useSelector } from 'react-redux';
+import { Outlet } from 'react-router';
+
+import { selectProviderFilterOption } from 'entities/game';
+
+import { Header } from 'shared/ui/';
+
+import s from './styles.module.scss';
 
 export const AppLayout = () => {
   const currentProvider = useSelector(selectProviderFilterOption);

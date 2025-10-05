@@ -1,6 +1,7 @@
-import { createListenerMiddleware, isAnyOf } from "@reduxjs/toolkit";
-import { saveGames } from "../lib";
-import { gameActions } from "./slice";
+import { createListenerMiddleware, isAnyOf } from '@reduxjs/toolkit';
+
+import { saveGames } from '../lib';
+import { gameActions } from './slice';
 
 export const gamesListener = createListenerMiddleware();
 

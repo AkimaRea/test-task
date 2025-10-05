@@ -1,1 +1,1 @@
-export * from './reset-provider-filter'
+export * from './reset-provider-filter';

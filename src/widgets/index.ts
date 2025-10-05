@@ -1,2 +1,2 @@
-export * from './select-provider'
-export * from './providers-games'
+export * from './select-provider';
+export * from './providers-games';

@@ -1,8 +1,11 @@
-import { gamesLoader, selectVisibleGames, useLoadGames } from "entities/game";
-import { useSelector } from "react-redux";
-import { RouteObject } from "react-router";
-import { Section } from "shared/ui";
-import { ProvidersGames, SelectProvider } from "widgets";
+import { useSelector } from 'react-redux';
+import { RouteObject } from 'react-router';
+
+import { ProvidersGames, SelectProvider } from 'widgets';
+
+import { gamesLoader, selectVisibleGames, useLoadGames } from 'entities/game';
+
+import { Section } from 'shared/ui';
 
 export const VitrinePage = () => {
   useLoadGames();
@@ -18,7 +21,7 @@ export const VitrinePage = () => {
 
 export const VitrineRoute = {
   index: true,
-  path: "/",
+  path: '/',
   element: <VitrinePage />,
   loader: gamesLoader,
 } as RouteObject;

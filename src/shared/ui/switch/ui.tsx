@@ -1,5 +1,6 @@
-import s from "./styles.module.scss";
-import { Switch as SwitchPrimitive } from "radix-ui";
+import { Switch as SwitchPrimitive } from 'radix-ui';
+
+import s from './styles.module.scss';
 
 export interface SwitchProps {
   id: string;
@@ -8,28 +9,14 @@ export interface SwitchProps {
   onCheckedChange?(checked: boolean): void;
 }
 
-export const Switch = ({
-  id,
-  label,
-  checked,
-  onCheckedChange,
-}: SwitchProps) => {
+export const Switch = ({ id, label, checked, onCheckedChange }: SwitchProps) => {
   return (
     <form>
-      <div style={{ display: "flex", alignItems: "center" }}>
-        <label
-          className={s.label}
-          htmlFor={id}
-          style={{ paddingRight: 15 }}
-        >
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+        <label className={s.label} htmlFor={id} style={{ paddingRight: 15 }}>
           {label}
         </label>
-        <SwitchPrimitive.Root
-          checked={checked}
-          onCheckedChange={onCheckedChange}
-          className={s.root}
-          id={id}
-        >
+        <SwitchPrimitive.Root checked={checked} onCheckedChange={onCheckedChange} className={s.root} id={id}>
           <SwitchPrimitive.Thumb className={s.thumb} />
         </SwitchPrimitive.Root>
       </div>

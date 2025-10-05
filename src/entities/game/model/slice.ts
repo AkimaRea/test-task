@@ -1,5 +1,6 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { GamesState, Game } from "./types";
+import { PayloadAction, createSlice } from '@reduxjs/toolkit';
+
+import { Game, GamesState } from './types';
 
 const initialState: GamesState = {
   items: [],
@@ -7,20 +8,20 @@ const initialState: GamesState = {
 };
 
 const slice = createSlice({
-  name: "game",
+  name: 'game',
   initialState,
   reducers: {
     setAll: (store, action: PayloadAction<Game[]>) => {
       store.items = action.payload;
     },
     toggleActive: (store, action: PayloadAction<number>) => {
-      const game = store.items.find((el) => el.id === action.payload);
+      const game = store.items.find(el => el.id === action.payload);
       if (game) game.isActive = !game.isActive;
     },
     setProviderFilter: (store, action: PayloadAction<string | null>) => {
       store.providerFilter = action.payload;
     },
-    resetProviderFilter: (store) => {
+    resetProviderFilter: store => {
       store.providerFilter = null;
     },
   },

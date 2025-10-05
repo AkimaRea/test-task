@@ -1,18 +1,16 @@
-import cx from "classnames";
-import { Game } from "entities/game/model/types";
-import { isUrl } from "shared/lib/validators";
-import { Popover, SettingsButton, Switch } from "shared/ui";
-import s from "./styles.module.scss";
-import { useDispatch } from "react-redux";
-import { gameActions } from "entities/game/model";
+import { useDispatch } from 'react-redux';
 
-export const GamesCardControlled = ({
-  id,
-  title,
-  provider,
-  image,
-  isActive,
-}: Game) => {
+import cx from 'classnames';
+
+import { gameActions } from 'entities/game/model';
+import { Game } from 'entities/game/model/types';
+
+import { isUrl } from 'shared/lib/validators';
+import { Popover, SettingsButton, Switch } from 'shared/ui';
+
+import s from './styles.module.scss';
+
+export const GamesCardControlled = ({ id, title, provider, image, isActive }: Game) => {
   const dispatch = useDispatch();
 
   const handleChangeActive = () => {
@@ -20,29 +18,17 @@ export const GamesCardControlled = ({
   };
 
   return (
-    <div
-      className={cx(s.games_card, s.controlled)}
-      data-active={isActive}
-      key={title}
-    >
+    <div className={cx(s.games_card, s.controlled)} data-active={isActive} key={title}>
       <div className={s.games_card_settings}>
         <Popover trigger={<SettingsButton />}>
-          <Switch
-            id={title}
-            label="Показывать"
-            checked={isActive}
-            onCheckedChange={handleChangeActive}
-          />
+          <Switch id={title} label='Показывать' checked={isActive} onCheckedChange={handleChangeActive} />
         </Popover>
       </div>
       <div className={s.games_card_content}>
         <div className={s.games_card_image_wrapper}>
           <img
-            className={cx(
-              s.games_card_image,
-              !isUrl(image) && s.games_card_image_placeholder
-            )}
-            src={isUrl(image) ? image : "assets/logo.png"}
+            className={cx(s.games_card_image, !isUrl(image) && s.games_card_image_placeholder)}
+            src={isUrl(image) ? image : 'assets/logo.png'}
             alt="game's-banner"
           />
         </div>

@@ -1,8 +1,11 @@
-import { gamesLoader, selectAdminGames, useLoadGames } from "entities/game";
-import { useSelector } from "react-redux";
-import { RouteObject } from "react-router";
-import { Section } from "shared/ui";
-import { ProvidersGames, SelectProvider } from "widgets";
+import { useSelector } from 'react-redux';
+import { RouteObject } from 'react-router';
+
+import { ProvidersGames, SelectProvider } from 'widgets';
+
+import { gamesLoader, selectAdminGames, useLoadGames } from 'entities/game';
+
+import { Section } from 'shared/ui';
 
 export const AdminPage = () => {
   useLoadGames();
@@ -11,16 +14,13 @@ export const AdminPage = () => {
   return (
     <Section>
       <SelectProvider />
-      <ProvidersGames
-        games={games}
-        editable
-      />
+      <ProvidersGames games={games} editable />
     </Section>
   );
 };
 
 export const AdminRoute = {
-  path: "/admin",
+  path: '/admin',
   element: <AdminPage />,
   loader: gamesLoader,
 } as RouteObject;

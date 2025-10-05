@@ -1,7 +1,10 @@
-import { gameActions } from "entities/game";
-import { RotateCcw } from "lucide-react";
-import { useDispatch } from "react-redux";
-import s from "./styles.module.scss";
+import { useDispatch } from 'react-redux';
+
+import { RotateCcw } from 'lucide-react';
+
+import { gameActions } from 'entities/game';
+
+import s from './styles.module.scss';
 
 export const ResetProviderFilterButton = () => {
   const dispatch = useDispatch();
@@ -11,10 +14,7 @@ export const ResetProviderFilterButton = () => {
   };
 
   return (
-    <button
-      onClick={handleReset}
-      className={s.reset_filter_button}
-    >
+    <button onClick={handleReset} className={s.reset_filter_button}>
       <RotateCcw width={20} />
     </button>
   );
